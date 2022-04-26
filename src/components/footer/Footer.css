@@ -1,0 +1,39 @@
+footer {
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+  padding: 25px 0;
+  font-family: "PT Sans", sans-serif;
+}
+.footer-cover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.social i {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50px;
+}
+.social i:first-child{
+  padding: 10px 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-cover{
+      text-align: center;
+      gap: 10px;
+      justify-content: center;
+  }
+  .footer{
+    margin-top: 30px;
+  }
+}

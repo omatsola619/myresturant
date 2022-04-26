@@ -1,0 +1,22 @@
+.about {
+  height: 400px;
+  margin-top: 30px;
+}
+.about h3 {
+  font-size: 40px;
+  font-family: "product-sans";
+  margin-bottom: 50px;
+}
+.about p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    height: auto;
+    margin-top: 20px;
+  }
+  .about h3{
+      margin-bottom: 20px;
+  }
+}

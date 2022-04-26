@@ -1,0 +1,77 @@
+.photo-gallery {
+  color: #313437;
+  background-color: #fff;
+}
+.photo-gallery h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+.photo-gallery .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.photo-gallery .intro p {
+  margin-bottom: 0;
+}
+.product-photos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+.product-photos .item2 {
+  height: 250px !important;
+  flex: 1;
+  color: white;
+  font-family: 'product-sans';
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.item2:first-child {
+  background-image: linear-gradient(to bottom, #0000006e, #0000006e),
+    url("https://images.food52.com/ACi0xrnYBdKjWRIJ9ZFCXZjhcYM=/660x440/filters:format(webp)/583d2633-65c0-43d6-9b52-cba0c8fa1399--2019-1210_nigerian-jollof-rice_3x2_rocky-luten_006.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item2:nth-child(2) {
+  background-image: linear-gradient(to bottom, #0000006e, #0000006e),
+    url("https://sisijemimah.com/wp-content/uploads/2015/12/moimoi-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item2:nth-child(3) {
+  background-image: linear-gradient(to bottom, #0000006e, #0000006e),
+    url("https://grandbaby-cakes.com/wp-content/uploads/2020/10/Fried-Turkey-1-681x1024.jpg ");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item2:nth-child(4) {
+  background-image: linear-gradient(to bottom, #0000006e, #0000006e),
+    url("https://img-global.cpcdn.com/recipes/fa56709e08d06641/680x482cq70/egusi-soup-recipe-main-photo.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  .photo-gallery h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+  .product-photos {
+    flex-direction: column;
+  }
+  .item2 {
+    width: 100%;
+    padding-bottom: 150px;
+  }
+}

@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+@font-face {
+  font-family: "product-sans";
+  src: url("../../fonts/ProductSans-Black.ttf");
+}
+.home {
+  height: 500px;
+  width: auto;
+  background-image: linear-gradient(to bottom, #0000006e, #0000006e),
+    url("../../asset/foodie.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+}
+.home .intro {
+  text-align: center;
+}
+.intro .small {
+  color: white;
+  font-size: 35px;
+  line-height: -12px;
+  font-family: "Square Peg", cursive;
+}
+.intro h2 {
+  font-size: 5em;
+  color: white;
+  margin-bottom: 10px;
+  font-family: "product-sans";
+}
+.intro button {
+  width: 150px;
+  height: 50px;
+  border: 2px solid white;
+}
+.services{
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.services h3{
+  padding-left: 30px;
+  font-family: 'product-sans';
+  font-size: 35px;
+}
+.service-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 20px;
+}
+.item{
+  flex: 1;
+  height: 150px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  color: white;
+}
+.item i{
+  font-size: 2.5em;
+}
+.item:first-child{
+  background-color: #04B9D2;
+}
+.item:nth-child(2){
+  background-color: #FE5722;
+}
+.item:nth-child(3){
+  background-color: #E81F63;
+}
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .intro h2 {
+    font-size: 3.5em;
+  }
+  .intro button {
+    width: 120px;
+    height: 40px;
+  }
+  .intro .small {
+    font-size: 30px;
+  }
+  .service-cards{
+    flex-direction: column;
+  }
+  .item{
+    width: 90%;
+    padding: 40px 30px;
+  }
+}
